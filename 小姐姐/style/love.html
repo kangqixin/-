@@ -1,0 +1,101 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>见证我们永恒的爱情 by 康祁鑫</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+    </style>
+    <link href="style/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="style/jquery.js"></script>
+    <script type="text/javascript" src="style/garden.js"></script>
+    <script type="text/javascript" src="style/functions.js"></script>
+</head>
+<audio src="style/齐晨 - 咱们结婚吧.mp3"autoplay="autoplay"hidden="hidden"loop="loop"></audio>
+<body>
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+			    <span class="space"/><span class="comments">********* 给小姐姐的话 *********</span><br />
+                <span class="comments">/**</span><br />
+                <span class="space"/><span class="comments">* I'm in Hebei Normol Unversity  Information Technology programmers,</span><br />
+                <span class="space"/><span class="comments">* 我想说一些话给你听.</span><br />
+                <span class="space"/><span class="comments">*/</span><br />
+                Boy i = <span class="keyword">new</span> Boy(<span class="string">"康祁鑫"</span>);<br />
+                Girl u = <span class="keyword">new</span> Girl(<span class="string">"郝旋"</span>);<br />
+                <span class="comments">// 2017年6月19号我们相识，嗯，那天聊得很开心. </span><br />
+                <span class="comments">//第二天呢我们见面了，你很美，比照片上美很多?</span><br />
+                <span class="comments">//我想我看你第一眼我就喜欢你了.</span><br />
+                <span class="comments">//或许这就是一见钟情吧 .</span><br />
+                <span class="comments">// 不知道你是否也喜欢我.</span><br />
+                <span class="comments">// 现在我们在一起了，今天是第二天了吧.</span><br />  
+                <span class="comments">// 我会牢牢记住这个日子.</span><br />
+                <span class="placeholder"/>我想我们会好好地最一起吧<br />
+                <span class="placeholder"/><span class="comments">// 经常会习惯性的想你</span><br />
+                <span class="comments">// 我知道你也在想我，啊哈，爱你.</span><br />
+				<script type="text/javascript"></script>
+                <script type="text/javascript" src=""></script>
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+                <center>
+                    <script type="text/javascript"></script>					
+                    <script type="text/javascript" src=""></script>
+                </center>
+						<div id="elapseClock"">
+                        HX, My Little sisiter, I will have fallen in love with you forever.
+                        </div>
+                    </div>
+                    <div id="loveu">
+                        Love u .<br/>
+                        <div class="signature">- 康祁鑫</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+			<embed src=""　autostart="true"　loop="fours" hidden="true"></embed><br />
+			Inspired by <a href="">郝旋</a> project.<br />
+            Copyright © 2017 <a href=""><b>康祁鑫</b></a> 2017-2099<br />
+			你是我的傻不拉几的小姐姐，hh<br />
+        </div>
+    </div>
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            document.body.appendChild(msg);
+            $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                adjustWordsPosition();
+                startHeartAnimation();
+            }, 10000);
+            
+            $("#accept").click(function(){
+                $(this).hide();
+                $("#elapseClock").show();
+                var together = new Date();
+                timeElapse(together);
+                setInterval(function () {
+                    timeElapse(together);
+                }, 500);
+            })
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+    </script>
+</body>
+</html>
